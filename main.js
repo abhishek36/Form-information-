@@ -37,7 +37,7 @@ let saveinfo = (e) => {
 </a>
   `;
   phone.innerHTML = `
-<a href="tel:+9009742061" target="_blank">
+<a href="tel:9009742061" target="_blank">
 <i class="fa-solid fa-phone"></i>
 </a>
 `;
