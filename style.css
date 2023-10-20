@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+:root {
+  --bg-color: #222;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.4);
+  --box-shadow: 0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333;
+  --box-shadow-inset: 0.4rem 0.4rem 1rem #111 inset,
+    -0.4rem -0.4rem 1rem #333 inset;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 10px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #222222;
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+/* .parent {
+  border: 1px solid red;
+} */
+
+.left {
+  width: 25%;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.right {
+  width: 75%;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: var(--box-shadow);
+}
+
+.dbtnall {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  position: absolute;
+  right: 30px;
+}
+
+.carddiv {
+  width: 287px;
+  height: fit-content;
+  box-shadow: var(--box-shadow);
+  margin: 10px;
+  position: relative;
+  /* box-shadow: var(--box-shadow); */
+  /* box-shadow: 1px 1px 1px 1px; */
+}
+
+.dbtn {
+  box-shadow: var(--box-shadow);
+  width: 40px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border-radius: 50%;
+}
+
+label {
+  color: #ccc;
+}
+
+input {
+  display: block;
+  padding: 10px;
+  border: none;
+  color: white;
+  outline: none;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  background: transparent;
+  margin-top: 10px;
+}
+
+span {
+  display: block;
+  margin: 16px 0;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: var(--box-shadow);
+  color: #ccc;
+}
+
+button:hover {
+  box-shadow: var(--box-shadow-inset);
+}
+
+.whatsapp {
+  box-shadow: var(--box-shadow);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.phone {
+  box-shadow: var(--box-shadow);
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+}
+
+.whatsapp i {
+  color: green;
+  font-size: 20px;
+}
+
+.phone:hover {
+  box-shadow: var(--box-shadow-inset);
+}
+
+.whatsapp:hover {
+  box-shadow: var(--box-shadow-inset);
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    margin: 0;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  span {
+    width: 47%;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 20px !important;
+    padding: 20px;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .parent {
+    width: 100%;
+  }
+  .carddiv {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
