@@ -29,6 +29,7 @@ let saveinfo = (e) => {
   // dbtnall.className = "dbtnall";
 
   whatsapp.className = "whatsapp";
+  
   phone.className = "phone";
 
   whatsapp.innerHTML = `
